@@ -1,0 +1,111 @@
+.card{
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 50rem;
+    
+    &__side{
+        background-color: orangered;
+        height: 50rem;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius:10px;
+        box-shadow: 0 1.5rem 4rem rgba($black,.15);
+        overflow: hidden;
+        &--front{
+            background-color:$white;
+                
+        }
+        &--back{
+            transform: rotateY(180deg);
+                &-1{
+                    background-image: linear-gradient(to right bottom,
+                    $color-secondary-light,$color-secondary-dark);
+                }
+                &-2{
+                    background-image: linear-gradient(to right bottom,
+                    $color-tertiary-light,$color-tertiary-dark);
+                }
+                &-3{
+                    background-image: linear-gradient(to right bottom,
+                    $purple,$purple);
+                }
+        }
+
+    }
+    &:hover &__side--front{
+        transform: rotateY(-180deg);
+    }
+    &:hover &__side--back{
+        transform: rotateY(0);
+    }
+    &__picture{
+        background-size: cover;
+        height: 26rem;
+        background-blend-mode:color-burn;
+        clip-path: polygon(0 0,100% 0,100% 75%,50% 100%,0 75%);
+        -webkit-clip-path: polygon(0 0,100% 0,100% 75%,50% 100%,0 75%);
+        &--1{
+            background-image:linear-gradient(to right bottom,
+            $color-secondary-light,
+            $color-secondary-dark),
+             url(guitar_img.jpg);
+        }
+        &--2{
+            background-image:linear-gradient(to right bottom,
+            $color-tertiary-light,
+            $color-tertiary-dark),
+             url(ANIMEIMG.jpg);
+        }
+        &--3{
+            background-image: linear-gradient(to right bottom,
+            $color-primary-light,
+            $color-primary-dark),
+            url(game.jpg);
+        }
+    }
+    &__heading{
+        margin-top: 8rem;
+        font-size: 2.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 6px;
+    
+        
+    }
+    &__heading--span{ 
+        
+        color: transparent;
+        -webkit-background-clip:text;
+        
+        &--1{
+            background-image: linear-gradient(to right  ,$color-secondary-light,$color-secondary-dark);
+            
+        }
+        &--2{
+            background-image: linear-gradient(to right  ,$color-tertiary-light,$color-tertiary-dark);
+            
+        }
+        &--3{
+            background-image: linear-gradient(to right  ,$purple,$purple);
+            
+        }
+        
+    
+    }
+    &__cta{
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        color: $white;
+        font-size: 2rem;
+        letter-spacing: .2rem;
+    }
+    
+    
+}

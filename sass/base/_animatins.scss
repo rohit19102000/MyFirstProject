@@ -1,0 +1,30 @@
+@keyframes heading-1{
+    0% {
+        opacity: 0;
+        transform: translate(-10rem); }
+      80% {
+        transform: translate(1rem); }
+      100% {
+        opacity: 1;
+        transform: tanslate(0); }
+}
+@keyframes heading-2{
+    0% {
+        opacity: 0;
+        transform: translate(10rem); }
+      80% {
+        transform: translate(-1rem); }
+      100% {
+        opacity: 1;
+        transform: tanslate(0); }
+}
+
+@keyframes moveinbutton {
+  0% {
+      opacity: 0;
+      transform: translateY(3rem); }
+    100% {
+      opacity: 1;
+      transform: tanslate(0); 
+    } 
+}

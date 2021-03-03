@@ -1,0 +1,14 @@
+{
+  "name": "cssproject4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+     "compile:sass-p4":"node-sass sass/main.scss project4.css -=w"
+  },
+  "author": "rohit",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
