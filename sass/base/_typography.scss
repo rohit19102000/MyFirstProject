@@ -4,6 +4,7 @@
     backface-visibility: hidden;
     margin-bottom: 6rem;
     &-1{
+
       display:block;
       font-size: 6rem;
       font-weight:400;
@@ -11,7 +12,17 @@
       animation: heading-1;
       animation-duration: 2s;
       animation-timing-function: ease-out;
-      
+          @include respond(tab-port){              // width=< 900px
+            letter-spacing: 3.2rem;
+            font-size: 5rem;
+        }
+        @include respond(tab-land){              // width=< 900px
+            letter-spacing: 3.5rem;
+            font-size: 5.8rem;
+        }
+
+        
+     
     }
     
     &-2{
@@ -20,6 +31,13 @@
         font-weight:400;
         letter-spacing:1.5rem;
         animation: heading-2 2s ease-out;
+        @include respond(tab-port){              // width=< 900px
+            letter-spacing: 5rem;
+        }
+        @include respond(tab-land){              // width=< 900px
+            letter-spacing: 1rem;
+        }
+    
     }
     &--box{
         position:absolute;
@@ -27,6 +45,7 @@
         left: 50px;
         text-align: center;
         transform: translate(32%,50%);
+        
     }
    }
    body {
@@ -47,9 +66,17 @@
     -webkit-background-clip:text;
     letter-spacing:0.5rem;
     transition: all .2s;
+    @include respond(tab-port){
+    font-size: 2.5rem;        
+    }
+
+    @include respond(phone){
+        font-size: 2rem;
+    }
     &:hover{
        transform:skewY(2deg)skewX(15deg); 
     }
+ 
 }
 .heading-tertiary{
     font-size: $default-fontsize;

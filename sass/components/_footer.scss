@@ -2,4 +2,7 @@
     height: 30rem;
     padding-top: 5rem;
     background-color: $black;
+    @include respond(tab-port){
+        padding: 8em 0;
+    }
 }

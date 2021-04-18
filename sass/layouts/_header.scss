@@ -1,13 +1,41 @@
 .header{
-    height: 95vh;
+    height: 85vh;
     background-image: linear-gradient(to right bottom , 
     rgba($blue,1),
     rgba($blue,0.6)),
-    url(background.jpg);
+    url(background-s.jpg);
     background-size: cover;
     background-position:top;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh);
-}
+    position: relative;
+    @supports(clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)){
+      -wekit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh);
+        height: 95vh;
+    }    
+      @media  only screen and  (min-resolution:192dpi) and (min-width: 37.5em){
+      background-image: linear-gradient(to right bottom , 
+      rgba($blue,1),
+      rgba($blue,0.6)),
+      url(background.jpg);
+      }
+      @media  only screen and (min-width:125em){
+      background-image: linear-gradient(to right bottom , 
+      rgba($blue,1),
+      rgba($blue,0.6)),
+      url(background.jpg);
+    
+      }
+    @include respond(phone){
+      height:40vh;
+      -wekit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 35vh);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 35vh);  
+    }
+    @include respond(tab-port){
+      height:60vh;
+      -wekit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 45vh);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 45vh);  
+    }
+  }
 .header-2{
   height: 85vh;
   background-image:linear-gradient(to right bottom,

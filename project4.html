@@ -6,11 +6,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="project4.css">
     <link rel="shortcut icon" href="favicon.png">
-    <link rel="stylesheet" href="icon-font.css">
+    <!-- <link rel="stylesheet" href="icon-font.css"> -->
     <title>rohit kedar.persnoal site</title>
 
 </head>
 <body>
+    
     <header class="header">
         <div class="heading--box">
             <h1 class="heading" >
@@ -39,9 +40,25 @@
         </div>
         <div class="col-1-of-2">
             <div class="composition">
-                <img src="IMG_20190525_151802-01.jpg" alt="photo-1" class="composition__photo composition__photo--p1">
+                <img srcset="IMG_20190525_151802-01-2.jpg 300w,IMG_20190525_151802-01.jpg 3162w" 
+                    sizes="(max-width:56.25em) 20vw,(max-width:37.5em) 30vw,300px"
+                    alt="photo-1"
+                    class="composition__photo composition__photo--p1"
+                    src="IMG_20190525_151802-01.jpg">
+                <img srcset="IMG_20210219_171812-2.jpg 300w,IMG_20210219_171812.jpg 3162w" 
+                    sizes="(max-width:56.25em) 20vw,(max-width:37.5em) 30vw,300px"
+                    alt="photo-2"
+                    class="composition__photo composition__photo--p2"
+                    src="IMG_20210219_171812.jpg">
+                <img srcset="IMG20200714182714-2.jpg 300w,IMG20200714182714.jpg 3162w" 
+                    sizes="(max-width:56.25em) 20vw,(max-width:37.5em) 30vw,300px"
+                    alt="photo-3"
+                    class="composition__photo composition__photo--p3"
+                    src="IMG20200714182714.jpg">
+
+                <!-- <img src="IMG_20190525_151802-01.jpg" alt="photo-1" >
                 <img src="IMG_20210219_171812.jpg" alt="photo-2" class="composition__photo composition__photo--p2">
-                <img src="IMG20200714182714.jpg" alt="photo-3" class="composition__photo composition__photo--p3">
+                <img src="IMG20200714182714.jpg" alt="photo-3" class="composition__photo composition__photo--p3"> -->
             </div>
         </div>
     </div>

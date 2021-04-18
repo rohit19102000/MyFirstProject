@@ -15,9 +15,9 @@
       box-shadow: 0 1rem 2rem rgba($black, 0.2); 
         &::after {
           transform: scalex(1.4) scaleY(1.6);
-          opacity: 0; }
-      
+          opacity: 0; 
         }
+      }
       &:active {
         transform: translateY(-1px);
         box-shadow: 0 0.5rem 1rem rgba($black, 0.2); 
