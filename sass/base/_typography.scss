@@ -6,22 +6,20 @@
     &-1{
 
       display:block;
-      font-size: 6rem;
-      font-weight:400;
-      letter-spacing: 3.2rem;
-      animation: heading-1;
+      font-size: 3rem;
+      font-weight: 400;
+      letter-spacing:  3.5rem;
+
+
+      animation-name: heading-1;
       animation-duration: 2s;
       animation-timing-function: ease-out;
-          @include respond(tab-port){              // width=< 900px
-            letter-spacing: 3.2rem;
-            font-size: 5rem;
-        }
-        @include respond(tab-land){              // width=< 900px
-            letter-spacing: 3.5rem;
-            font-size: 5.8rem;
-        }
-
         
+
+      @include respond(phone) {
+        letter-spacing: 1rem;
+        font-family: 5rem;
+    }
      
     }
     
@@ -33,18 +31,26 @@
         animation: heading-2 2s ease-out;
         @include respond(tab-port){              // width=< 900px
             letter-spacing: 5rem;
+            font: size 1.2rem; ;
         }
         @include respond(tab-land){              // width=< 900px
             letter-spacing: 1rem;
+            font-size: 1rem;
         }
+        
+        @include respond(phone){
+            letter-spacing: .5rem;
+            font-size: .8rem;
+        }
+     
     
     }
     &--box{
         position:absolute;
-        top: 40px;
-        left: 50px;
+        top: 40%;
+        left: 50%;
         text-align: center;
-        transform: translate(32%,50%);
+        transform: translate(-50%,-50%);
         
     }
    }

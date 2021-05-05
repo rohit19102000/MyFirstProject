@@ -33,20 +33,16 @@
   margin-bottom: 6rem; }
   .heading-1 {
     display: block;
-    font-size: 6rem;
+    font-size: 3rem;
     font-weight: 400;
-    letter-spacing: 3.2rem;
-    animation: heading-1;
+    letter-spacing: 3.5rem;
+    animation-name: heading-1;
     animation-duration: 2s;
     animation-timing-function: ease-out; }
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (max-width: 37.5em) {
       .heading-1 {
-        letter-spacing: 3.2rem;
-        font-size: 5rem; } }
-    @media only screen and (max-width: 75em) {
-      .heading-1 {
-        letter-spacing: 3.5rem;
-        font-size: 5.8rem; } }
+        letter-spacing: 1rem;
+        font-family: 5rem; } }
   .heading-2 {
     display: block;
     font-size: 1.5rem;
@@ -55,16 +51,22 @@
     animation: heading-2 2s ease-out; }
     @media only screen and (max-width: 56.25em) {
       .heading-2 {
-        letter-spacing: 5rem; } }
+        letter-spacing: 5rem;
+        font: size 1.2rem; } }
     @media only screen and (max-width: 75em) {
       .heading-2 {
-        letter-spacing: 1rem; } }
+        letter-spacing: 1rem;
+        font-size: 1rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .heading-2 {
+        letter-spacing: .5rem;
+        font-size: .8rem; } }
   .heading--box {
     position: absolute;
-    top: 40px;
-    left: 50px;
+    top: 40%;
+    left: 50%;
     text-align: center;
-    transform: translate(32%, 50%); }
+    transform: translate(-50%, -50%); }
 
 body {
   font-family: "Lato",sans-serif;
